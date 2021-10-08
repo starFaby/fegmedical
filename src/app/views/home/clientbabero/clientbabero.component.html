@@ -1,0 +1,52 @@
+<h2 class="fontSize3 text-center">Babero</h2>
+<div class="row" *ngIf="!data; else mainContent">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4 p-4 text-center mx-auto">
+                <mat-card class="cardImage">
+                    <mat-card-header>
+                        <mat-card-title>Ups..!</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <h2>Lo siento. No existen Categorias</h2>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #mainContent>
+    <div class="row">
+        <div class="col-md-4 p-4" *ngFor="let item of data">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{item.title}}</mat-card-title>
+                    <mat-card-subtitle>{{item.subtitle}}</mat-card-subtitle>
+                </mat-card-header>
+                <hr>
+                <img mat-card-image src="{{item.img}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>{{item.description}}</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <div class="row">
+                        <div class="col-md-6 p-1">
+                            <button mat-button>
+                                <mat-icon> speaker_phone</mat-icon>
+                            </button>
+                            <span style="font-size: 1.5vw;"> 0983856136</span>
+                        </div>
+                        <div class="col-md-6 p-1">
+                            <button mat-button>
+                                <mat-icon> phone</mat-icon>
+                            </button>
+                            <span style="font-size: 1.5vw;"> 022647002</span>
+                        </div>
+                    </div>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+
+</ng-template>

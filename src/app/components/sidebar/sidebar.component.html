@@ -1,0 +1,63 @@
+<section>
+    <mat-nav-list>
+        <a mat-list-item [routerLink]="[ '/' ]" (click)="onSidenavClose()">
+            <mat-icon>arrow_back</mat-icon>
+        </a>
+    </mat-nav-list>
+    <!--Menu-->
+    <mat-list-item [matMenuTriggerFor]="menu">
+        <mat-icon>folder_special</mat-icon>
+        <a matline>Bata de Cirujano</a>
+    </mat-list-item>
+    <mat-menu #menu="matMenu" class="viviskyblue">
+        <button mat-menu-item [routerLink]="['/cbc']">Bata de Cirujano</button>
+    </mat-menu>
+    <!--Menu 1-->
+    <mat-list-item [matMenuTriggerFor]="menu1">
+        <mat-icon>folder_special</mat-icon>
+        <a matline>Bata de Paciente</a>
+    </mat-list-item>
+    <mat-menu #menu1="matMenu" class="viviskyblue">
+        <button mat-menu-item [routerLink]="['/cbp']">Bata de Paciente</button>
+    </mat-menu>
+    <!--Menu 2-->
+    <mat-list-item [matMenuTriggerFor]="menu2">
+        <mat-icon>folder_special</mat-icon>
+        <a matline>Babero</a>
+    </mat-list-item>
+    <mat-menu #menu2="matMenu" class="viviskyblue">
+        <button mat-menu-item [routerLink]="['/cb']">Babero</button>
+    </mat-menu>
+     <!--Menu 3 -->
+     <mat-list-item [matMenuTriggerFor]="menu3">
+        <mat-icon>folder_special</mat-icon>
+        <a matline>Terno Enfermero</a>
+    </mat-list-item>
+    <mat-menu #menu3="matMenu" class="viviskyblue">
+        <button mat-menu-item [routerLink]="['/cte']">Ternos</button>
+    </mat-menu>
+    <!--Menu 4 -->
+    <mat-list-item [matMenuTriggerFor]="menu4">
+        <mat-icon>folder_special</mat-icon>
+        <a matline>Gorro</a>
+    </mat-list-item>
+    <mat-menu #menu4="matMenu" class="viviskyblue">
+        <button mat-menu-item [routerLink]="['/cg']">Gorro</button>
+    </mat-menu>
+    <!--Menu 5 -->
+    <mat-list-item [matMenuTriggerFor]="menu5">
+        <mat-icon>folder_special</mat-icon>
+        <a matline>Mascarilla Azul</a>
+    </mat-list-item>
+    <mat-menu #menu5="matMenu" class="viviskyblue">
+        <button mat-menu-item [routerLink]="['/cmba']">Mascarilla Azul</button>
+    </mat-menu>
+    <!--Menu 5 -->
+    <mat-list-item [matMenuTriggerFor]="menu6">
+        <mat-icon>folder_special</mat-icon>
+        <a matline>Mascarilla Negra</a>
+    </mat-list-item>
+    <mat-menu #menu6="matMenu" class="viviskyblue">
+        <button mat-menu-item [routerLink]="['/cmb']">Mascarilla Negra</button>
+    </mat-menu>
+</section>

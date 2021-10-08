@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.flickrping{
+    background-color: #F72585;
+}
+.purple{
+    background-color: #7209B7;
+}
+.trypanblue{
+    background-color: #3A0CA3;
+}
+.ultramarineblue{
+    background-color: #4361EE;
+}
+.viviskyblue{
+    background-color: #4CC9F0;
+}
+.textflickrping{
+    color: #F72585;
+}
+.textpurple{
+    color: #7209B7;
+}
+.texttrypanblue{
+    color: #3A0CA3;
+}
+.textultramarineblue{
+    color: #4361EE;
+}
+.textviviskyblue{
+    color: #4CC9F0;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
